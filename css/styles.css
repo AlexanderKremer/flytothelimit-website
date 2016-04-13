@@ -9,7 +9,7 @@ main {
 
 /*Navigation bar*/
 nav {
-	font-family: 'Montserrat-bold', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background-color: #d62626;
 	border-bottom: 5px solid #4274A6;
 	position: fixed;
@@ -23,7 +23,7 @@ nav img {
 nav ul {
 	width: 1160px;
 	margin: 0 auto;
-	padding: 10px 0;
+	padding: 0;
 	text-align: center;
 }
 
@@ -41,7 +41,10 @@ nav li a {
 	text-decoration: none;
 	font-size: 25px;
 	text-transform: uppercase;
-	padding: 36px 20px;
+	display: block;
+	height: 100%;
+	line-height: 100px;
+	padding: 0 20px;
 }
 
 nav a:hover {
@@ -54,5 +57,48 @@ nav a:hover {
 }
 
 #active:hover {
+	background-color: #4274A6;
+}
+
+
+/*Banner section*/
+.banner img {
+	width: 100%;
+/*	position: relative;*/
+}
+
+/*Banner tour detials*/
+.banner-content {
+	background: rgba(99, 97, 98, 0.5);
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px 30px;
+	margin: 0 auto;
+	width: 600px;
+	text-align: center;
+}
+
+.banner-content p {
+	font-size: 32px;
+}
+
+.banner-content span {
+	font-size: 20px;
+}
+
+
+/*Button style*/
+#tour-details {
+	background-color: #659cc2;
+	padding: 10px 30px;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#tour-details:hover {
 	background-color: #4274A6;
 }
