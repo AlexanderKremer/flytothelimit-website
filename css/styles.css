@@ -11,9 +11,10 @@ main {
 nav {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #d62626;
-	border-bottom: 5px solid #4274A6;
+	border-bottom: 7px solid #4274A6;
 	position: fixed;
 	width: 100%;
+	z-index: 999;
 }
 
 nav img {
@@ -123,6 +124,30 @@ nav a:hover {
 }
 
 /*Bottom banner*/
+/*.banner-bottom {
+
+}*/
 .banner-bottom img {
 	width: 100%;
+}
+
+/*Footer*/
+#footer-container {
+	width: 1160px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+body > footer {
+	background-color: #636162;
+	clear: both;
+	color: #cccccc;
+	padding: 20px 0;
+	border-top: 7px solid #d62626;
+}
+
+body > footer:after {
+	content: '';
+	display: block;
+	clear: both;
 }
