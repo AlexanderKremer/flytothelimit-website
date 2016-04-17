@@ -138,8 +138,8 @@ nav a:hover {
 	text-align: center;
 	margin: 0 auto;
 	position: absolute;
-	left: calc(50% - 354.5px);
-	top: calc(50%);
+	left: calc(50% - 304.5px);
+	top: calc(50% + 540px);
 }
 
 .content p {
@@ -168,11 +168,17 @@ nav a:hover {
 
 /*Footer*/
 #footer-container {
-	width: 1160px;
-	height: 150px;
+	width: 1000px;
 	margin: 0 auto;
-	padding: 10px 30px;
-	width: 600px;
+	text-align: center;
+}
+
+#footer-container h1 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#footer-container p {
+	font-family: 'raleway', sans-serif;
 }
 
 body > footer {
@@ -187,4 +193,26 @@ body > footer:after {
 	content: '';
 	display: block;
 	clear: both;
+}
+
+#book-now {
+	background-color: #659cc2;
+	padding: 10px 30px;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#book-now:hover {
+	background-color: #4274A6;
+}
+
+.booking-button,
+.social,
+ .contact {
+	float: left;
+	margin: 0 40px;
 }
