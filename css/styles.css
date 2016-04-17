@@ -14,7 +14,6 @@ nav {
 	border-bottom: 7px solid #4274A6;
 	position: fixed;
 	width: 100%;
-	z-index: 999;
 }
 
 nav img {
@@ -63,10 +62,12 @@ nav a:hover {
 
 
 /*Banner section*/
-.banner img {
+.banner {
+	background-image: url(../img/banner.jpg);
+	padding: 200px 0;
 	width: 100%;
-	position: relative;
-	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /*Banner tour detials*/
@@ -76,12 +77,8 @@ nav a:hover {
 	font-family: 'Montserrat', sans-serif;
 	padding: 10px 30px;
 	margin: 0 auto;
-	width: 600px;
+	width: 609px;
 	text-align: center;
-	position: absolute;
-	left: calc(50% - 330px);
-	top: calc(50% - 157.5px);
-	position: absolute;
 }
 
 .banner-content p {
@@ -97,7 +94,7 @@ nav a:hover {
 	background-color: #659cc2;
 	padding: 10px 30px;
 	border: none;
-	color: #ffffff;
+	color: #ebe7e9;
 	cursor: pointer;
 	outline: none;
 	font-size: 20px;
@@ -106,6 +103,7 @@ nav a:hover {
 
 #tour-details:hover {
 	background-color: #4274A6;
+	color: #ffffff;
 }
 
 /*Flight-offers div container*/
@@ -114,7 +112,7 @@ nav a:hover {
 	color: #ebe7e9;
 	text-align: center;
 	padding: 10px 28%;
-	margin: 0;
+	margin-top: 0;
 }
 
 .flight-offers h1 {
@@ -126,20 +124,21 @@ nav a:hover {
 }
 
 /*Bottom banner*/
-.banner-bottom > img {
-	width: 100%;
-	position: relative;
-	z-index: -1;
+.banner-bottom {
+	background-image: url(../img/banner-bottom.jpg);
+	padding: 20px 0;
 }
 
 /*main content*/
 .content {
-	background: rgba(101, 156, 194, 0.5);
+	background: rgba(101, 156, 194, 0.6);
 	text-align: center;
 	margin: 0 auto;
-	position: absolute;
+	width: 609px;
+	padding: 10px 0;
+/*	position: absolute;
 	left: calc(50% - 304.5px);
-	top: calc(50% + 540px);
+	top: calc(50% + 540px);*/
 }
 
 .content p {
@@ -155,7 +154,7 @@ nav a:hover {
 	background-color: #d62626;
 	padding: 10px 30px;
 	border: none;
-	color: #ffffff;
+	color: #ebe7e9;
 	cursor: pointer;
 	outline: none;
 	font-size: 20px;
@@ -164,17 +163,19 @@ nav a:hover {
 
 .content button:hover {
 	background-color: #4274A6;
+	color: #ffffff;
 }
 
 /*Footer*/
 #footer-container {
-	width: 1000px;
+	width: 1160px;
 	margin: 0 auto;
 	text-align: center;
 }
 
 #footer-container h1 {
 	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 15px;
 }
 
 #footer-container p {
@@ -185,21 +186,15 @@ body > footer {
 	background-color: #636162;
 	clear: both;
 	color: #cccccc;
-	padding: 20px 0;
 	border-top: 7px solid #d62626;
-}
-
-body > footer:after {
-	content: '';
-	display: block;
-	clear: both;
+	padding-bottom: 10px;
 }
 
 #book-now {
 	background-color: #659cc2;
 	padding: 10px 30px;
 	border: none;
-	color: #ffffff;
+	color: #ebe7e9;
 	cursor: pointer;
 	outline: none;
 	font-size: 20px;
@@ -208,6 +203,7 @@ body > footer:after {
 
 #book-now:hover {
 	background-color: #4274A6;
+	color: #ffffff;
 }
 
 .booking-button,
@@ -215,4 +211,30 @@ body > footer:after {
  .contact {
 	float: left;
 	margin: 0 40px;
+	width: 306px;
+}
+
+.social i {
+	font-size: 64px;
+	color: #659cc2;
+}
+
+.social i:hover {
+	color: #4274A6;
+}
+
+.social i:nth-child(1),
+.social i:nth-child(2) {
+	margin-right: 10px;
+}
+
+.contact i {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+body > footer:after {
+	content: '';
+	display: block;
+	clear: both;
 }
