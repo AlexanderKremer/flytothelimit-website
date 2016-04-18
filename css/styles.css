@@ -243,3 +243,45 @@ body > footer:after {
 	display: block;
 	clear: both;
 }
+
+/*-----------------------------------------------*/
+/*Contact page css*/
+#contact-container {
+	background-color: #ebe7e9;
+	border-top: 7px solid #4274A6;
+}
+
+#contact-form {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 30px;
+	color: #636162;
+}
+
+#contact-form {
+	font-family: 'raleway', sans-serif;
+}
+
+#contact-form h1 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#contact-details {
+
+}
+
+form div {
+	margin-bottom: 10px;
+}
+
+/*Contact form restrictions*/
+#post {
+	min-width: 600px;
+	min-height: 150px;
+	max-width: 800px;
+	max-height: 250px;
+	font-family: arial;
+}
+
+/*-----------------------------------------------*/
+/*Bookings page css*/
