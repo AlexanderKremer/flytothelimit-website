@@ -68,6 +68,11 @@
 			</div>
 
 			<div>
+				<label for="phone">Phone Number</label>
+				<input type="tel" id="phone" required placeholder="123 456 78 90">
+			</div>
+
+			<div>
 				<input type="radio" name="campus" id="auckland">
 				<label for="auckland">Fixed wing - $350/hr each passenger</label>
 			</div>
@@ -86,6 +91,20 @@
 			<div>
 				<label for="quantity">Number of people</label>
 				<input type="number" id="quantity" min="1" max="500">
+			</div>
+
+			<div>
+			<label for="country">Your country</label>
+			<select name="country" id="country">
+				<option value="">Please select...</option>
+				<optgroup label="Oceania">
+					<option value="nz">New Zealand</option>
+					<option value="au">Australia</option>
+				</optgroup>
+				<optgroup label="Other">
+					<option value="usa">United States of America</option>
+				</optgroup>
+			</select>
 			</div>
 
 			<div>
