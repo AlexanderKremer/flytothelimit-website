@@ -315,3 +315,36 @@ form div {
 
 /*-----------------------------------------------*/
 /*Bookings page css*/
+#booking-container {
+	background-color: #ebe7e9;
+}
+
+#booking-content {
+	color: #636162;
+	padding: 10px 30px;
+	margin: 0 auto;
+	width: 1160px;
+/*    column-count: 2;
+    column-gap: 20px;*/
+}
+
+#booking-content h1,
+#booking-content h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#booking-content li,
+#booking-content p {
+	font-size: 14px;
+	font-family: 'raleway', sans-serif;
+}
+
+#booking-content span {
+	font-weight: bold;
+}
+
+#booking-form {
+	margin: 0 auto;
+	width: 1160px;
+	padding: 10px 30px;
+}

@@ -31,7 +31,32 @@
 	<div class="banner">
 	</div>
 
-	<form action="register.php" method="get">
+	<div id="booking-container">
+		<div id="booking-content">
+			<h1>Book Scenic Flights Online</h1>
+			<h2>Online Booking Information</h2>
+			<ul>
+				<li>To proceed with making an online booking request for one of our scenic flights and tours simply click on the Book Now button for your preferred option below.</li>
+				<li>We will respond to you via email within 24 hours to send a booking confirmation to you. This allows us to ensure availability for your preferred date and offer alternatives if not.</li>
+				<li>Children are the same price as adults for ages 4 years and over. Infants are under 4 years and can fly seated on the lap of an adult.</li>
+				<li>All online bookings will request your credit cards details for confirmation of the booking, however <spam>your credit card will not be charged until the date of the flight or tour</spam> as it is subject to weather conditions.</li>
+				<li>For helicopter scenic flights you can <span>request a preferred departure time</span> in the booking form.</li>
+				<li>Please use the “<span>Special Requests</span>” box if you have any further questions or requests.</li>
+				<li>If you wish to enquire about one of our exclusive helicopter tours or for special charters please email us directly for a quote.</li>
+			</ul>
+			<h2>Cancellation Policy</h2>
+			<ul>
+				<li>Prior to one week of travel – full refund</li>
+				<li>Within one week and 48 hours of departure – 50% refund</li>
+				<li>Within 48hrs of departure – no refund</li>
+				<li>Cancellation by FlyToTheLimit due to weather or serious illness will not incur a cancellation fee</li>
+			</ul>
+			<p>Adverse weather conditions may mean that the scheduled itinerary cannot proceed as intended. If adverse weather means that you are unable to complete the full tour then any refund will be adjusted on a pro rata basis dependant on the flying time involved.</p>
+			<hr>
+		</div>
+
+		<div id="booking-form">
+			<form action="register.php" method="get">
 			<div>
 				<label for="full-name">Full name:</label>
 				<input type="text" id="full-name" required placeholder="John smith">
@@ -41,7 +66,36 @@
 				<label for="email">E-mail:</label>
 				<input type="email" id="email" required placeholder="john.smith@gmail.com">
 			</div>
+
+			<div>
+				<input type="radio" name="campus" id="auckland">
+				<label for="auckland">Fixed wing - $350/hr each passenger</label>
+			</div>
+
+			<div>
+				<input type="radio" name="campus" id="wellington">
+				<label for="wellington">Helicopter - $450/hr each passenger</label>
+			</div>
+
+			<div>
+				<input type="radio" name="campus" id="christchurch">
+				<label for="christchurch">Glider flights - $1200/hr – 3 hours recommended </label>
+				<span id="campus-message"></span>
+			</div>
+
+			<div>
+				<label for="quantity">Number of people</label>
+				<input type="number" id="quantity" min="1" max="500">
+			</div>
+
+			<div>
+				<label for="date">Check-in</label>
+				<input type="date" id="date">
+			</div>
+			<input type="submit" id="submit-button">	
 		</form>
+		</div>
+	</div>
 
 	<footer>
 		<div id="footer-container">
