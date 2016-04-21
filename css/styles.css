@@ -284,11 +284,26 @@ body > footer:after {
 	font-size: 20px;
 }
 
-#flight-options {
-	width: 480px;
-	padding: 20px 10px;
-	color: #636162;
+.list-wrapper {
+	width: 1160px;
 	margin: 0 auto;
+	height: 200px;
+}
+
+.list-left {
+	float: left;
+	width: 50%;
+	margin-bottom: 10px;
+}
+.list-right {
+	float: right;
+	width: 50%;
+	margin-bottom: 10px;
+}
+
+#flight-options {
+	padding: 10px 10px;
+	color: #636162;
 	clear: both;
 }
 
@@ -303,7 +318,7 @@ body > footer:after {
 }
 
 #scenic-flights {
-	padding: 10px 30px;
+	padding: 0 30px;
 	margin: 0 auto;
 	width: 1160px;
 	color: #ebe7e9;
@@ -326,10 +341,9 @@ body > footer:after {
 
 .scenic-flights-des {
 	background-color: #659cc2;
-	width: 100%;
 	float: left;
 	padding: 0 30px 10px 0;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 #scenic-flights:after {
@@ -350,7 +364,7 @@ body > footer:after {
 	cursor: pointer;
 	outline: none;
 	font-size: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 #bookingpage-button:hover {
@@ -422,6 +436,7 @@ body > footer:after {
 	background-color: #659cc2;
 	padding: 20px;
 	text-align: center;
+	display: none;
 }
 
 #gallery-container:after {
@@ -461,7 +476,7 @@ body > footer:after {
 	background-color: #659cc2;
 	width: 100%;
 	float: left;
-	padding: 0 30px 10px 0;
+	padding: 0 40px 10px 0;
 	margin-bottom: 30px;
 }
 
@@ -486,7 +501,7 @@ body > footer:after {
 #contact-form {
 	float: left;
 	width: 50%;
-	padding: 30px;
+	padding: 0 30px 20px 30px;
 }
 
 #contact-form,
@@ -504,7 +519,7 @@ body > footer:after {
 #company-details {
 	width: 35%;
 	float: right;
-	padding-top: 35px;
+	padding: 0 30px 20px 30px;
 }
 
 #company-details p {
