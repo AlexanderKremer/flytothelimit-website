@@ -1,0 +1,1 @@
+var namePattern = new RegExp("^[a-zA-Z' .-]{1,30}$");

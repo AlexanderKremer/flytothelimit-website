@@ -59,7 +59,7 @@ nav a:hover {
 /*Banner section*/
 .banner {
 	background-image: url(../img/banner.jpg);
-	padding: 200px 0;
+	padding: 300px 0 200px 0;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -106,7 +106,7 @@ nav a:hover {
 	background-color: #659cc2;
 	color: #ebe7e9;
 	text-align: center;
-	padding: 10px 28%;
+	padding: 10px 28% 25px 28%;
 	margin-top: 0;
 }
 
@@ -126,7 +126,7 @@ nav a:hover {
 
 /*main content*/
 .content {
-	background: rgba(101, 156, 194, 0.6);
+	background: rgba(101, 156, 194, 0.5);
 	text-align: center;
 	margin: 0 auto;
 	width: 609px;
@@ -279,8 +279,13 @@ body > footer:after {
 	text-align: center;
 }
 
+.transport span {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
 #flight-options {
-	width: 580px;
+	width: 480px;
 	padding: 20px 10px;
 	color: #636162;;
 	margin: 0 auto;
@@ -305,11 +310,66 @@ body > footer:after {
 
 /*-----------------------------------------------*/
 /*Gallery page css*/
+#gallery-container {
+	background-color: #ebe7e9;
+}
 
+#gallery-wrapper {
+	width: 1060px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+#button-one,
+#button-two {
+	background-color: #4274A6;
+	padding: 15px 25px;
+	border: none;
+	color: #ebe7e9;
+	font-family: 'Montserrat', sans-serif;
+	margin: 10px;
+}
+
+#section-one {
+	background-color: #659cc2;
+	padding: 20px;
+	text-align: center;
+}
+
+
+#section-one img {
+	margin: 10px;
+}
+
+#section-two {
+	background-color: #659cc2;
+	padding: 20px;
+	text-align: center;
+}
+
+#gallery-container:after {
+	content: '';
+	display: block;
+	clear: both;
+}
 
 /*-----------------------------------------------*/
 /*About page css*/
+#about-container {
+	background-color: #ebe7e9;
+}
 
+#about-wrapper {
+	width: 1060px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+#about-container:after {
+	content: '';
+	display: block;
+	clear: both;
+}
 
 
 /*-----------------------------------------------*/
