@@ -1,7 +1,6 @@
 // Find the form
 var bookingForm = document.querySelector("#flightbooking")
 var nameMessage = document.querySelector("#full-name-message");
-var phoneMessage = document.querySelector("#phone-number-message");
 var emailMessage = document.querySelector("#email-message");
 var messageMessage = document.querySelector("#message-message");
 
@@ -12,7 +11,6 @@ var messageMessage = document.querySelector("#message-message");
 
 	var nameInput = document.querySelector("#full-name");
 	var emailInput = document.querySelector("#email");
-	var phoneInput = document.querySelector("#phone-number");
 	var messageInput = document.querySelector("#post");
 
 nameInput.onblur = function() {
@@ -55,32 +53,13 @@ emailInput.onblur = function() {
 	}
 }
 
-phoneInput.onblur = function() {
-
-	if ( this.value.length < 7 ) {
-
-			phoneMessage.innerHTML = "Please enter a phone number at least 7 numbers long";
-
-		} else if (this.value.length > 18 ) {
-
-			phoneMessage.innerHTML = "Phone number is to long";
-
-		} else if ( phonePattern.test( this.value ) ){
-
-		phoneMessage.innerHTML = "";
-	
-		} else {
-
-		phoneMessage.innerHTML = "Invalid phone number, only use numbers and spaces";
-	}
-
 	messageInput.onkeyup = function() {
 
 		var totalLetters = this.value.length;
 
-		messageMessage.innerHTML =  totalLetters + '/240';
+		messageMessage.innerHTML =  totalLetters + '/800';
 
-	}
 }
+
 
 	

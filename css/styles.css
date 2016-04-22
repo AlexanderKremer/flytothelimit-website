@@ -510,6 +510,11 @@ body > footer:after {
 	margin-right: 30px;
 }
 
+.about-img img {
+	width: 300px;
+	height: 200px;
+}
+
 .about-des {
 	background-color: #659cc2;
 	width: 100%;
@@ -625,7 +630,7 @@ form div {
 	color: #636162;
 	padding: 10px 30px;
 	margin: 0 auto;
-	width: 1160px;
+	width: 860px;
 }
 
 #booking-content h1,
@@ -651,9 +656,10 @@ form div {
 
 #booking-form {
 	margin: 0 auto;
-	width: 1160px;
+	width: 860px;
 	padding: 10px 30px;
 	font-family: 'raleway', sans-serif;
+		padding-bottom: 150px;
 }
 
 #booking-container:after {

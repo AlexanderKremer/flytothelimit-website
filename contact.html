@@ -15,7 +15,7 @@
 			<ul>
 				<li>
 					<a href="index.html">
-						<img src="http://placehold.it/200x75">
+						<img src="img/fttl.png" alt="Fly to the limit company logo">
 					</a>
 				</li>
 				<li><a href="index.html">Home</a></li>
@@ -35,20 +35,23 @@
 	<div id="contact-wrapper">
 		<div id="contact-form">
 			<h1>Contact us</h1>
-			<form action="register.php" method="get">
+			<form action="register.php" method="post">
 				<div>
 					<label for="full-name">Full name:</label><br>
 					<input type="text" id="full-name" required placeholder="John smith">
+					<span id="full-name-message"></span>
 				</div>
 
 				<div>
 					<label for="email">E-mail:</label><br>
 					<input type="email" id="email" required placeholder="john.smith@gmail.com">
+					<span id="email-message"></span>
 				</div>
 
 				<div>
 					<label for="post"></label>
-					<textarea name="" id="post" cols="30" rows="10" placeholder="Message"></textarea>
+					<textarea name="message" id="post" cols="30" rows="10" max="800" placeholder="Message"></textarea>
+					<span id="message-message">0/800</span>
 				</div>
 				<input type="submit" id="submit-button">	
 			</form>
@@ -88,6 +91,7 @@
 			</div>
 		</div>
 	</footer>
-
+		<script src="js/patterns.js"></script>
+		<script src="js/contact-validation.js"></script>
 	</body>
 </html>

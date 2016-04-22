@@ -15,7 +15,7 @@
 			<ul>
 				<li>
 					<a href="index.html">
-						<img src="http://placehold.it/200x75">
+						<img src="img/fttl.png" alt="Fly to the limit company logo">
 					</a>
 				</li>
 				<li><a href="index.html">Home</a></li>
@@ -52,24 +52,26 @@
 				<li>Cancellation by FlyToTheLimit due to weather or serious illness will not incur a cancellation fee</li>
 			</ul>
 			<p>Adverse weather conditions may mean that the scheduled itinerary cannot proceed as intended. If adverse weather means that you are unable to complete the full tour then any refund will be adjusted on a pro rata basis dependant on the flying time involved.</p>
-			<hr>
 		</div>
 
 		<div id="booking-form">
-			<form action="flight-booking.php" method="get">
+			<form action="flight-booking.php" method="post" id="flight-booking">
 			<div>
 				<label for="full-name">Full name:</label>
 				<input type="text" id="full-name" required placeholder="John smith">
+				<span id="full-name-message"></span>
 			</div>
 
 			<div>
 				<label for="email">E-mail:</label>
 				<input type="email" id="email" required placeholder="john.smith@gmail.com">
+				<span id="email-message"></span>
 			</div>
 
 			<div>
 				<label for="phone">Phone Number</label>
 				<input type="tel" id="phone-number" required placeholder="123 456 78 90">
+				<span id="phone-number-message"></span>
 			</div>
 
 			<div>
@@ -90,19 +92,22 @@
 
 			<div>
 				<label for="quantity">Number of people</label>
-				<input type="number" id="quantity" min="1" max="500">
+				<input type="number" id="quantity" min="1" max="7" step="1">
 			</div>
 
 			<div>
-			<label for="country">Your country</label>
-			<select name="country" id="country">
+			<label for="flight">Flight package</label>
+			<select name="flight" id="flight">
 				<option value="">Please select...</option>
-				<optgroup label="Oceania">
-					<option value="nz">New Zealand</option>
-					<option value="au">Australia</option>
+				<optgroup label="Standard">
+					<option>Scenic flight</option>
+					<option>Mountain viewing</option>
+					<option>Lake trips</option>
 				</optgroup>
-				<optgroup label="Other">
-					<option value="usa">United States of America</option>
+				<optgroup label="Advance">
+					<option>Photographic flights</option>
+					<option>Charters</option>
+					<option>Tramping</option>
 				</optgroup>
 			</select>
 			</div>
@@ -140,6 +145,7 @@
 			</div>
 		</div>
 	</footer>
-
+		<script src="js/patterns.js"></script>
+		<script src="js/validation.js"></script>
 	</body>
 </html>
