@@ -122,6 +122,8 @@ nav a:hover {
 .banner-bottom {
 	background-image: url(../img/banner-bottom.jpg);
 	padding: 20px 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /*main content*/
@@ -250,13 +252,21 @@ body > footer:after {
 	text-align: center;
 }*/
 
+/*Banner section*/
+.flights-banner {
+	background-image: url(../img/flights-banner.jpg);
+	padding: 300px 0 200px 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 #flight-container {
 	background-color: #ebe7e9;
 }
 
 #flight-content {
 	color: #636162;
-	padding: 10px 30px;
 	margin: 0 auto;
 	width: 1160px;
 }
@@ -277,6 +287,11 @@ body > footer:after {
 	margin: 20px;
 	width: 29.8%;
 	text-align: center;
+}
+
+.transport img {
+	width: 280px;
+	height: auto;
 }
 
 .transport span {
@@ -339,6 +354,11 @@ body > footer:after {
 	margin-right: 30px;
 }
 
+.scenic-flights-img img {
+	width: 300px;
+	height: 200px;
+}
+
 .scenic-flights-des {
 	background-color: #659cc2;
 	float: left;
@@ -382,6 +402,14 @@ body > footer:after {
 /*Gallery page css*/
 #gallery-container {
 	background-color: #ebe7e9;
+}
+
+.gallery-banner {
+	background-image: url(../img/gallery-banner.jpg);
+	padding: 300px 0 200px 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #gallery-wrapper {
@@ -430,11 +458,13 @@ body > footer:after {
 
 #section-one img {
 	margin: 10px;
+	width: 300px;
+	height: 200px;
 }
 
 #section-two {
 	background-color: #659cc2;
-	padding: 20px;
+	padding: 30px;
 	text-align: center;
 	display: none;
 }
@@ -449,6 +479,14 @@ body > footer:after {
 /*About page css*/
 #about-container {
 	background-color: #ebe7e9;
+}
+
+.about-banner {
+	background-image: url(../img/about-banner.jpg);
+	padding: 300px 0 200px 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #about-wrapper {
@@ -491,6 +529,14 @@ body > footer:after {
 /*Contact page css*/
 #contact-container {
 	background-color: #ebe7e9;
+}
+
+.contact-banner {
+	background-image: url(../img/contact-banner.jpg);
+	padding: 300px 0 200px 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #contact-wrapper {
@@ -565,6 +611,14 @@ form div {
 /*Bookings page css*/
 #booking-container {
 	background-color: #ebe7e9;
+}
+
+.booking-banner {
+	background-image: url(../img/booking-banner.jpg);
+	padding: 300px 0 200px 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #booking-content {
